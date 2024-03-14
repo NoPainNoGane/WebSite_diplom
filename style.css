@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-image: linear-gradient(to right, black, aliceblue);
 }
 
 li {
@@ -23,6 +24,7 @@ li {
 .head_link:hover {
     color: #DE546B;
 }
+
 
 /* HEADER */
 header {
@@ -71,7 +73,7 @@ header {
     top: 80px;
     width: 300px;
     height: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: black;
     backdrop-filter: blur(16px);
     border-radius: 10px;
     overflow: hidden;
@@ -195,12 +197,82 @@ header {
     }
 }
 
-.tab_content {
-    position:relative;
-    display:inline-block;
-    margin-top: 50px;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    width: 100%;
-    height: 900px
+.mainPage {
+    margin: 15rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.tab_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    height: 500px;
+    min-height: 450px;
+    padding: 50px 20px;
+}
+
+.tab_content .show {
+    display: flex;
+    background-color: #DE546B;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.tab_content .show:hover{
+    background-color: #901B2E;
+}
+
+.customInput {
+    width: 40%;
+    max-height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 8px;
+    outline: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: black;
+    margin: auto;
+    color: #fff;
+}
+
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-col{
+    width:33.3%;
+    padding: 5rem 40px;
+}
+
+.rudolf-img{
+    margin-left: 5rem;
+    border-radius: 50%;
+    width: 20vh;
+    height: auto;
+}
+
