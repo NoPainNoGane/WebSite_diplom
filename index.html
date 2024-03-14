@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание БашХК</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>      
+    <header>
+        <div class="navbar"> 
+            <div class="logo"><a href="#" class="head_link">
+                Башкирский Хореографический колледж
+            </a></div>
+            <ul class="links">
+                <li><a href="glavn" class="head_link">Главная</a></li>
+                <li><a href="schedule" class="head_link">Расписание</a></li>
+                <li><a href="lk" class="head_link">Личный кабинет</a></li>
+                <!-- <li><a href="login" class="head_link">Вход</a></li>
+                <li><a href="reg" class="head_link" id="register">Регистрация</a></li> -->
+            </ul>
+            <ul class="logreg">
+                <li><a href="login" class="log">Вход</a></li>
+                <li><a href="reg" class="register">Регистрация</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <script src="https://kit.fontawesome.com/bc390af48f.js" crossorigin="anonymous"></script>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropDownMenu">
+            <li><a href="glavn" class="head_link">Главная</a></li>
+            <li><a href="schedule" class="head_link">Расписание</a></li>
+            <li><a href="lk" class="head_link">Личный кабинет</a></li>
+            <li><a href="login" class="log">Вход</a></li>
+            <li><a href="reg" class="register">Регистрация</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropDownMenu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <div class="mainPage">
+        <div class="tab_content">
+            <select name="group">
+                <option value="r1">Программная инженерия</option>
+                <option value="r2">Математическое обеспечение</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
