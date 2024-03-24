@@ -6,6 +6,7 @@
     <title>Расписание БашХК</title>
     <link rel="stylesheet" href="style.css">
     
+    
 </head>
 <body>      
     <header>
@@ -56,22 +57,56 @@
     <div class="mainPage">
         <div class="tab_content">
             <h1 style="color: white; padding-bottom: 30px; text-transform:uppercase">Расписание</h1>
-            <input type="text" class="customInput" style="flex: 1;" placeholder="Факультет">
+            <!-- <div class="dropdown">
+                <div class="select">
+                    <span class="selected">Класс</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li class="li_menu">5-1</li>
+                    <li class="li_menu">5-2</li>
+                    <li class="li_menu">5-3</li>
+
+                </ul>
+            </div> -->
+            <div class="select-menu">
+                <div class="select-btn" id="select-btn">
+                    <span class="text" id="text">Класс</span>
+                    <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+                </div>
+
+                <ul class="list">
+                    <li class="option" style="--i:1">
+                        <span class="option-text">5-1</span>
+                    </li>
+                    <li class="option" style="--i:2">
+                        <span class="option-text">5-2</span>
+                    </li>
+                    <li class="option" style="--i:3">
+                        <span class="option-text">5-3</span>
+                    </li>
+                </ul>
+            </div>
+            <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+
+            <script src="./dropdownmenu.js"></script>
+            <!-- <input type="text" class="customInput" style="flex: 1;" placeholder="Факультет"> -->
             <!-- <select class="selectInput" onchange="handleChange(this)">
                 <option value="" disabled selected hidden></option>
             </select> -->
 
-            <input type="text" class="customInput" style="flex: 1;" placeholder="Курс">
+            <!-- <input type="text" class="customInput" style="flex: 1;" placeholder="Курс"> -->
             <!-- <select class="selectInput" onchange="handleChange(this)">
                 <option value="" disabled selected hidden></option>
             </select> -->
 
-            <input type="text" class="customInput" style="flex: 1;" placeholder="Группа">
+            <!-- <input type="text" class="customInput" style="flex: 1;" placeholder="Группа"> -->
             <!-- <select class="selectInput" onchange="handleChange(this)">
                 <option value="" disabled selected hidden></option>
             </select> -->
 
-            <input type="text" class="customInput" style="flex: 1;" placeholder="Нделя">
+            <!-- <input type="text" class="customInput" style="flex: 1;" placeholder="Нделя"> -->
             <!-- <select class="selectInput" onchange="handleChange(this)">
                 <option value="" disabled selected hidden></option>
             </select> -->
