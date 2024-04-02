@@ -216,7 +216,7 @@ header {
     overflow: hidden;
     width: 768px;
     max-width: 100%;
-    height: 500px;
+    height: 700px;
     min-height: 450px;
     padding: 50px 20px;
 }
@@ -275,93 +275,11 @@ header {
     width: 20vh;
     height: auto;
 }
-/* 
-.dropdown {
-    min-width: 15em;
-    position: relative;
-    margin: 2em;
-}
 
-.dropdown * {
-    box-sizing: border-box;
-}
-
-.select {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px #2a2f3b solid;
-    border-radius: 0.5em;
-    padding: 1em;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.select-ckicked {
-    border: 2px #26489a solid;
-    box-shadow: 0 0 0.8em #26489a;
-}
-
-.select:hover {
-    background: #747474;
-}
-
-.caret {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid black;
-    transition: 0.3s;
-}
-
-.caret-rotate {
-    transform: rotate(180deg);
-}
-
-.menu {
-    list-style: none;
-    padding: 0.2em 0.5em;
-    background: #fff;
-    border: 1px #717171;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.35);
-    border-radius: 0.5em;
-    color: black;
-    position: absolute;
-    top: 3em;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    opacity: 0;
-    display: none;
-    transition: 0.2s;
-    z-index: 1;
-}
-
-.menu li {
-    padding: 0.7em 0.5em;
-    margin: 0.3em 0;
-    border-radius: 0.5em;
-    cursor: pointer;
-}
-
-.menu li:hover {
-    background: #717171;
-}
-
-/* .menu li:active{ 
-.active {
-    background: #252525;
-}
-
-.menu-open {
-    display: block;
-    opacity: 1;
-} */
+/* DropDown menu */
 
 .select-menu {
-    width: 380px;
+    width: max-content; /*380px*/
 }
 
 .select-menu .select-btn {
@@ -435,4 +353,33 @@ header {
     font-size: 18px;
     color: #333;
 }
+
+
+/* Calendar */
+
+.calendar {
+    width: max-content; /*380px*/
+    margin-bottom: 20px;
+}
+
+.calendar .date-picker {
+    width: 380px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(226, 131, 229, 0.35);
+    font-size: 18px;
+    color: black;
+}
+
+
+
+
+
 
